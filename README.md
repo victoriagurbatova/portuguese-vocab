@@ -71,3 +71,17 @@ npm start
 ```
 
 Прогресс хранится в `localStorage` в браузере (без бэкенда и авторизации).
+
+## Деплой на Vercel
+
+Проект настроен для автоматического деплоя на Vercel при пуше в ветку `main`.
+
+Чтобы это заработало, добавь в настройки GitHub репозитория секреты:
+
+- `VERCEL_TOKEN` — личный токен Vercel
+- `VERCEL_ORG_ID` — ID организации Vercel
+- `VERCEL_PROJECT_ID` — ID проекта Vercel
+
+Файл workflow: `.github/workflows/deploy.yml`
+
+Если хочешь, могу помочь получить эти значения и проверить настройки Vercel.
